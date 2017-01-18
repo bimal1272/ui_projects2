@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<body>
+<h1>Calculator</h1>
+<!--w<h1>Simple Calculator</h1>-->
+<div ng-app="myApp">
+<div ng-controller="calculatorCtrl">
+    <div ng-app=" ">
+        <form>
+        first number: <input type="text"ng-model="firstnumber">
+        <div ng-app=" ">
+        second number: <input type="text"ng-model="secondnumber"></div>
+        </form>
+    
+    
+    
+    </div>
+<button class="w3-btn w3-green w3-ripple" ng-click="editUser('new')">&#9998; Create New User</button>
+    
+
+<!--<div class="offset4 span6 well">-->
+
+
+
+
+<input type="button" value="1" name="no" ng-click="addNumber('1')">  
+<input type="button" value="2" name="no" ng-click="addNumber('2')">  
+<input type="button" value="3" name="no" ng-click="addNumber('3')"><br>
+<input type="button" value="4" name="no" ng-click="addNumber('4')">
+<input type="button" value="5" name="no" ng-click="addNumber('5')">
+<input type="button" value="6" name="no" ng-click="addNumber('6')"><br>
+<input type="button" value="7" name="no" ng-click="addNumber('7')">
+<input type="button" value="8" name="no" ng-click="addNumber('8')">
+<input type="button" value="9" name="no" ng-click="addNumber('9')"><br>
+<input type="button" value="0" name="no" ng-click="addNumber('0')">
+<input type="button" value="-" name="no" ng-click="addOperator('-')">  
+<input type="button" value="+" name="no" ng-click="addOperator('+')">
+<input type="button" value="%" name="no" ng-click="divideoperator('%')">
+<input type="button" value="*" name="no" ng-click="multiplyoperator('*')"><br>     <br>
+ <button ng-click="calculate()">Calculate</button> <br><br>
+ <button ng-click="numbers = []; txt=0;">Clear</button> <br><br>
+
+ Result: {{result}}    </div>
+</div>
+</div>
+</body>
+    <script src="../node_modules/angular/angular.js"></script> 
+  <script src="../scripts/controllers/scripts.js"></script>
+   
+    
+</html>

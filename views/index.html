@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>sample express server</title>
+    <link rel="stylesheet"
+          href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    </head>
+    <body ng-app="appName">
+    Testing angular app
+    
+    <div ng-controller ="appCtrl">
+        
+        <h1>One way data binding
+        </h1>
+        
+        <h3> {
+        {
+        hello world}
+        }
+        </h3>
+        <h1>Two way data binding
+        </h1>
+        
+        <h3> {
+        {
+        title}
+        }
+        </h3>
+        <button ng-click()="change()">Change</button><br>
+        Form elements <br>
+        <input type="text" ng-model = "formModels">
+                                                
+        {
+        {
+        formModal
+        }
+        }
+        <br>
+        
+        </div>
+            
+        <button ng-controller="personctrl">app ctrl</button>
+    <div ng-controller="personCtrl">
+        <h3>person service</h3>
+        <button class="btn btn-success" ng -click="initialize()">personctrl</button></div>
+    </body>
+    <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/appctrl.js"></script>
+    <script type="text/javascript" src="../scripts/services/personservice.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/personctrl.js"></script>
+    <script type="text/javascript" src="../scripts/services/personfactory.js"></script>
+                                                                             
+
+
+        
+    
+</html>
